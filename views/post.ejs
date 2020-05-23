@@ -1,0 +1,10 @@
+<%- include("partials/header"); -%> 
+
+<h1><%= postobj.postTitle%></h1>
+<p><%= postobj.post %> </p>
+
+<form action="/deletepost" method="POST">
+    <button class= "btn btn-dark" type="submit" name = "del" value = <%= postobj._id%> >Delete</button>
+</form>
+
+<%- include("partials/footer"); -%> 
